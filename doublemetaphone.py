@@ -668,25 +668,6 @@ word="sleep"
 primary,secondary=x.process(word)
 print primary
 print secondary
-
-		
-						
-						
-						
-							
-							
-						
-							
-					
-						
-						
-						
-						
-					
-			
-			
-			
-				
 			
 		
 		
