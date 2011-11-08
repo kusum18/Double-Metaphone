@@ -661,30 +661,13 @@ class meta:
 		return primary,secondary
 		
 					
-				
+#How to use metaphone algorithm				
 x=meta()
-import urllib as u
-def ch(word):
-	e="http://swoodbridge.com/DoubleMetaPhone/mptest.php3?in="+word
-	e=u.urlopen(e).read()
-	e=e.split('<h2>')
-	e=e[1].split('</h2>')
-	e=e[0].split(' and ')
-	a=e[0].split("'")
-	a=a[1]
-	b=e[1].split("'")
-	b=b[1]
-	return a,b
-
-v=[]
-for each in open('r').readlines():
-	each=each.split("\n")
-	r=each[0]
-	v.append(r)
-
-while 1:
-	f=raw_input()
-	print x.process(f)
+#to produce primary and secondary hash just use the following
+word="sleep"
+primary,secondary=x.process(word)
+print primary
+print secondary
 
 		
 						
